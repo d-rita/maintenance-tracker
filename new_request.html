@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="maintenancetracker.css" />
+    <script type="text/javascript" src="maintenancetracker.js"></script>
+
+    <title>My Requests</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>
+            <a href="home.html">Maintenance Tracker</a>
+            <!--
+            <a href="user_details.html">Profile</a>
+            <a href="index.html">Log out</a>
+            -->
+
+        </h1>
+    </div>
+    <div id="navigation">
+        <ul>
+            <li><a href="home.html">My Requests</a></li>
+            <li><a href="new_request.html">Create Request</a></li>
+            <li><a href="index.html">Log Out</a></li>
+        </ul>
+    </div>
+    <div id="new_request">
+        <form method="POST">
+            <h2><i>New Repair Request Details:</i>:</h2><br> Title:
+            <br>
+            <input type="text" name="title" maxlength="90" /><br> Details:
+            <br>
+            <textarea name="details" cols="80" rows="10">Enter the repair details here...</textarea><br><br>
+            <input type="submit" value="Submit Request">
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
