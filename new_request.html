@@ -1,43 +1,54 @@
+<!--my code-->
 <!DOCTYPE html>
+<html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="maintenancetracker.css" />
-    <script type="text/javascript" src="maintenancetracker.js"></script>
-
-    <title>My Requests</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Request</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <h1>
-            <a href="home.html">Maintenance Tracker</a>
-            <!--
-            <a href="user_details.html">Profile</a>
-            <a href="index.html">Log out</a>
-            -->
+    <header>
+        <a href="home.html" class="header">Maintenance Tracker</a>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="home.html">My Requests</a></li>
+                <li><a href="new_request.html">Create Request</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="new_request">
+                <form method="POST">
+                    <div>
+                        <h2 style="background-color:#f8f8ff; width:fit-content"><i>New Repair Request Details:</i></h2>
+                    </div>
+                    <div>
+                        <p>Title:</p>
+                        <input type="text" name="title" maxlength="90" />
+                    </div>
+                    <div>
+                        <p>Details:</p>
+                        <textarea name="details" cols="80" rows="10">Enter the repair details here...</textarea>
+                    </div>
+                    <div>
+                        <br>
+                        <input type="submit" value="Submit Request">
+                    </div>
 
-        </h1>
-    </div>
-    <div id="navigation">
-        <ul>
-            <li><a href="home.html">My Requests</a></li>
-            <li><a href="new_request.html">Create Request</a></li>
-            <li><a href="index.html">Log Out</a></li>
-        </ul>
-    </div>
-    <div id="new_request">
-        <form method="POST">
-            <h2><i>New Repair Request Details:</i>:</h2><br> Title:
-            <br>
-            <input type="text" name="title" maxlength="90" /><br> Details:
-            <br>
-            <textarea name="details" cols="80" rows="10">Enter the repair details here...</textarea><br><br>
-            <input type="submit" value="Submit Request">
-
-
-        </form>
-    </div>
-
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright Andela</p>
+    </footer>
 </body>
 
 </html>

@@ -1,59 +1,64 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="maintenancetracker.css" />
-    <script type="text/javascript" src="maintenancetracker.js"></script>
-
-    <title>My Requests</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <h1>
-            <a href="home.html">Maintenance Tracker</a>
-            <!--
-            <a href="user_details.html">Profile</a>
-            <a href="index.html">Log out</a>
-            -->
-
-        </h1>
-
-
-    </div>
-    <div id="navigation">
-        <ul>
-            <li><a href="home.html">My Requests</a></li>
-            <li><a href="new_request.html">Create Request</a></li>
-            <li><a href="index.html">Log Out</a></li>
-        </ul>
-    </div>
-    <table>
-        <tr>
-            <th>Request</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <th>Laptop Repair</th>
-            <th>Pending</th>
-        </tr>
-        <tr>
-            <th>Projector repair</th>
-            <th>Resolved</th>
-        </tr>
-    </table>
-    <!--
-<class="Requests">
+    <header>
+        <a href="home.html" class="header">Maintenance Tracker</a>
+    </header>
+    <main>
+        <nav>
             <ul>
-                <li>
-                    <a href="request_detail.html">request 1</a></l>
-                    <li>
-                        <a href="request_detail.html">request 2</a></li>
-                    <li>
-                        <a href="request_detail.html">request 3</a></li>
-
+                <li><a href="home.html">My Requests</a></li>
+                <li><a href="new_request.html">Create Request</a></li>
+                <li><a href="index.html">Log Out</a></li>
             </ul>
-        </class>
-       -->
+        </nav>
+        <section>
+            <table class="user-table">
+                <tr>
+                    <th scope="col">Request</th>
+                    <th scope="col">Status</th>
+                </tr>
+                <tr>
+                    <td><a href="request_detail.html">Furniture Repair</a></td>
+                    <td>Resolved</td>
+                </tr>
+                <tr>
+                    <td><a href="request_detail.html">Machinery Repair</a></td>
+                    <td>Denied</td>
+                </tr>
+                <tr>
+                    <td><a href="request_detail.html">Furniture Repair</a></td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td><a href="request_detail.html">Machinery Repair</a></td>
+                    <td>Resolved</td>
+                </tr>
+                <tr>
+                    <td><a href="request_detail.html">Furniture Repair</a></td>
+                    <td>Denied</td>
+                </tr>
+                <tr>
+                    <td><a href="request_detail.html">Machinery Repair</a></td>
+                    <td>Pending</td>
+                </tr>
+
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright Andela</p>
+    </footer>
 </body>
 
 </html>
