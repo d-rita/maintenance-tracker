@@ -1,0 +1,71 @@
+<!--my code-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Request</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html" class="header">Maintenance Tracker</a>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="home.html">My Requests</a></li>
+                <li><a href="new_request.html">Create Request</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <form method="POST">
+                <div class="new_request">
+                    <div>
+                        <h2>Create my request</h2><br>
+                    </div>
+                    <div>
+                        <b>Title </b><input type="text" name="title" maxlength="90" style="background-color:#eedfcc;" />
+                    </div>
+                    <br>
+                    <div>
+                        <select>
+                            <option value="furniture">Furniture Repair</option>
+                            <option value="machinery">Machinery Repair</option>
+                            <option value="vehicle">Vehicle Repair</option>
+                            <option value="building">Building Repair</option>
+                        </select>
+
+                    </div>
+                    <br>
+                    <div>
+                        <b>Date of Submission </b>
+                        <input type="date" name="submission_date" />
+                    </div>
+                    <br>
+                    <div>
+                        <b>Details </b>
+                        <textarea name="details" cols="80" rows="10">Enter the repair details here...</textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Submit Request" />
+                    </div>
+
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <h5>Copyright Andela</h5>
+    </footer>
+</body>
+
+</html>
